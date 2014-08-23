@@ -1,0 +1,17 @@
+{
+  "name": "ctrls",
+  "description": "Common UI controls",
+  "homepage": "",
+  "author": "",
+  "version": "0.0.1",
+  "git": "",
+  "packages": {
+    "sugar": {},
+    "util": {
+      "path": "../util"
+    },
+    "ctrl": {
+      "path": "../ctrl"
+    }
+  }
+}

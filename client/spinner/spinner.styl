@@ -1,0 +1,17 @@
+@import 'core.import'
+
+
+.c-spinner
+  position relative
+  display inline-block
+  size 22px
+
+  opacity 0
+  transition opacity 0.3s
+  &.c-showing
+    opacity 1
+
+  .c-inner
+    position absolute
+    left 50%
+    top  50%

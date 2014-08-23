@@ -1,0 +1,13 @@
+@import 'core.import'
+
+
+.c-twisty
+  display inline-block
+  size 8, 9
+  background-image url('/packages/ctrls/images/twisty/twisty.svg')
+
+  &.is-loaded
+    transition transform 0.2s
+
+  &.is-open
+    transform rotate(90deg)
