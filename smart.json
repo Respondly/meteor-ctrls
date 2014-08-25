@@ -12,6 +12,9 @@
     },
     "ctrl": {
       "path": "../ctrl"
+    },
+    "css-stylus": {
+      "path": "../css-stylus"
     }
   }
 }
