@@ -5,7 +5,7 @@ Package.describe({
 
 
 Package.on_use(function (api) {
-  api.use(['coffeescript', 'sugar', 'http']);
+  api.use(['coffeescript', 'http']);
   api.use(['templating'], 'client');
   api.use(['css-stylus', 'ctrl', 'util']);
 
