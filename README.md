@@ -2,7 +2,7 @@
 Common UI controls.
 
 
-# Installation
+## Installation
 When running for the first time:
 
     mrt update
@@ -11,7 +11,7 @@ When running for the first time:
 
 
 
-# License (MIT)
+## License (MIT)
 
 Copyright © 2014, **Respondly**
 
