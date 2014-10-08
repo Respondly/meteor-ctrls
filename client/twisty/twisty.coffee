@@ -2,9 +2,8 @@ Ctrl.define
   'c-twisty':
     ready: ->
       @autorun =>
-        @api.opacity()
-        @api.isOpen()
-        @api.updateState()
+          @api.isOpen()
+          @api.updateState()
 
       Util.delay =>
           # NB: Allows twisty to load in "open" state without animating.
@@ -12,12 +11,18 @@ Ctrl.define
 
 
     api:
-      opacity: (value) -> @prop 'opacity', value, default:@defaultValue('opacity', 50) / 100
+      ###
+      Gets or sets whether the twitsy is open (true:facing-down)
+      or closed (false:facing-right).
+      ###
       isOpen: (value) -> @prop 'isOpen', value, default:false
 
+
+      ###
+      Updates the visual state of the control.
+      ###
       updateState: ->
         if el = @find()
-          el.css 'opacity', @api.opacity()
           el.toggleClass 'is-open', @api.isOpen()
 
 
