@@ -13,7 +13,7 @@ Ctrl.define
 
     api:
       opacity: (value) -> @prop 'opacity', value, default:@defaultValue('opacity', 50) / 100
-      isOpen: (value) -> @prop 'is-open', value, default:@defaultValue('isOpen', false)
+      isOpen: (value) -> @prop 'isOpen', value, default:false
 
       updateState: ->
         if el = @find()
