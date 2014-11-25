@@ -2,13 +2,6 @@
 Common UI controls.
 
 
-## Installation
-When running for the first time:
-
-    mrt update
-    package update
-
-
 
 
 ## License (MIT)
