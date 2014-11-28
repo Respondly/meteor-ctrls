@@ -1,7 +1,7 @@
 Package.describe({
   name: 'respondly:ctrls',
   summary: 'Common UI controls',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/Respondly/meteor-ctrls.git'
 });
 
@@ -13,6 +13,7 @@ Package.onUse(function (api) {
   api.use(['templating', 'ui', 'spacebars'], 'client');
   api.use('respondly:css-stylus@1.0.0');
   api.use('respondly:ctrl@1.0.0');
+  api.use('respondly:util@1.0.0');
 
   // Generated with: github.com/philcockfield/meteor-package-paths
   api.addFiles('client/avatar/avatar.html', 'client');
