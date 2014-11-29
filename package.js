@@ -11,7 +11,7 @@ Package.onUse(function (api) {
   api.versionsFrom('1.0');
   api.use(['coffeescript', 'http']);
   api.use(['templating', 'ui', 'spacebars'], 'client');
-  api.use('respondly:css-stylus@1.0.0');
+  api.use('respondly:css-stylus@1.0.3');
   api.use('respondly:ctrl@1.0.0');
   api.use('respondly:util@1.0.0');
 
