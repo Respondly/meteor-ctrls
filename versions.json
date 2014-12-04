@@ -74,11 +74,11 @@
     ],
     [
       "respondly:ctrl",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "respondly:util",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "spacebars",
