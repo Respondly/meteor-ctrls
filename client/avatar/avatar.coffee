@@ -1,5 +1,3 @@
-image = (file) -> "/packages/ctrls/images/avatar/#{ file }"
-
 LOADED      = 'loaded'
 LOAD_FAILED = 'load-failed'
 HIDDEN      = 'hidden'
@@ -8,7 +6,6 @@ HIDDEN      = 'hidden'
 Ctrl.define
   'c-avatar':
     init: ->
-      # @size = @options.size ? 36
       @hideOnError = @options.hideOnError ? false
       @hideUntilLoaded = @options.hideUntilLoaded ? false
 
@@ -28,18 +25,20 @@ Ctrl.define
           else
             el.removeClass HIDDEN
 
-
-
       el.on 'error', (e) =>
           @api.failed(true)
-          el.toggleClass LOAD_FAILED, true
-          el.toggleClass LOADED, false
-          el.attr 'src', @api.anonUrl()
+          el.toggleClass(LOAD_FAILED, true)
+          el.toggleClass(LOADED, false)
+
+          url = @api.anonUrl()
+          url = PKG.image('avatar/anon.svg') if Util.isBlank(url)
+          el.attr('src', url)
+
 
     api:
       isLoaded: (value) -> @prop 'is-loaded', value, default:null
       failed: (value) -> @prop 'failed', value, default:null
-      anonUrl: (value) -> @prop 'anon-url', value, default:@defaultValue('anonUrl', image('anon.svg'))
+      anonUrl: (value) -> @prop 'anon-url', value
       size: (value) -> @prop 'size', value, default:@defaultValue('size', 36)
 
 
