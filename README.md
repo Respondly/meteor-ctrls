@@ -1,8 +1,7 @@
 # Ctrls
 Common UI controls.
 
-
-
+[![Circle CI](https://circleci.com/gh/Respondly/meteor-ctrls.svg?style=svg)](https://circleci.com/gh/Respondly/meteor-ctrls)
 
 ## License (MIT)
 
