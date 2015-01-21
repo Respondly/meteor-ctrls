@@ -33,5 +33,9 @@ Package.onUse(function (api) {
 
 });
 
+Package.onTest(function(api){
 
+  // Generated with: github.com/philcockfield/meteor-package-paths
+  api.addFiles('tests/shared/sample.coffee', ['client', 'server']);
 
+});
