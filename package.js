@@ -28,8 +28,8 @@ Package.onUse(function (api) {
   api.addFiles('client/twisty/twisty.coffee', 'client');
   api.addFiles('client/twisty/twisty.styl', 'client');
   api.addFiles('client/util.coffee', 'client');
-  api.addFiles('images/avatar/anon.svg', ['client', 'server']);
-  api.addFiles('images/twisty/twisty.svg', ['client', 'server']);
+  api.addAssets('images/avatar/anon.svg', ['client', 'server']);
+  api.addAssets('images/twisty/twisty.svg', ['client', 'server']);
 
 });
 
